@@ -56,12 +56,18 @@ export function Hero() {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center gap-4 pt-4">
-            <button className="w-full sm:w-auto bg-bafe-yellow text-bafe-blue font-bold px-8 py-3.5 rounded-full hover:bg-yellow-500 transition-colors flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(245,176,39,0.3)]">
+            <a
+              href="#inscription"
+              className="w-full sm:w-auto bg-bafe-yellow text-bafe-blue font-bold px-8 py-3.5 rounded-full hover:bg-yellow-500 transition-colors flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(245,176,39,0.3)]"
+            >
               <span className="text-xl leading-none">✦</span> Réserver ma place
-            </button>
-            <button className="w-full sm:w-auto bg-transparent border border-white/30 text-white font-medium px-8 py-3.5 rounded-full hover:bg-white/5 transition-colors flex items-center justify-center gap-2">
+            </a>
+            <a
+              href="#programme"
+              className="w-full sm:w-auto bg-transparent border border-white/30 text-white font-medium px-8 py-3.5 rounded-full hover:bg-white/5 transition-colors flex items-center justify-center gap-2"
+            >
               Voir le programme <span className="text-lg leading-none">→</span>
-            </button>
+            </a>
           </div>
         </div>
         

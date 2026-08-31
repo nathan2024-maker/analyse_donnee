@@ -126,8 +126,8 @@ const days = [
 ];
 
 export function Curriculum() {
-  const [activeModule, setActiveModule] = useState<string>("L1");
-  const [activeJ2Module, setActiveJ2Module] = useState<string>("L5");
+  const [activeModule, setActiveModule] = useState<string>("");
+  const [activeJ2Module, setActiveJ2Module] = useState<string>("");
 
   const toggleModule = (id: string, theme: string) => {
     if (theme === 'blue') {
@@ -138,7 +138,7 @@ export function Curriculum() {
   };
 
   return (
-    <section className="py-20 px-6 md:px-12 max-w-5xl mx-auto">
+    <section id="programme" className="py-20 px-6 md:px-12 max-w-5xl mx-auto scroll-mt-24">
       <div className="text-center mb-12">
         <h2 className="text-2xl font-bold text-bafe-blue flex items-center justify-center gap-2">
           <span className="text-2xl">📖</span> Programme détaillé
@@ -196,23 +196,29 @@ export function Curriculum() {
                       )}
                     </button>
                     
-                    {isActive && lesson.content && (
-                      <div className="px-5 pb-6 pl-[4.5rem]">
-                        <ul className="space-y-2 mb-6">
-                          {lesson.content.map((item, index) => (
-                            <li key={index} className="flex items-start gap-3">
-                              <span className="text-gray-400 text-xs mt-1.5 font-bold">•</span>
-                              <span className="text-gray-600 font-medium text-sm leading-relaxed">{item}</span>
-                            </li>
-                          ))}
-                        </ul>
-                        
-                        {lesson.exercise && (
-                          <div className="bg-[#f0f4fa] border border-blue-100 text-blue-800 text-sm p-4 rounded-lg flex items-start gap-2">
-                            <span className="font-bold text-blue-600">Exercice :</span> 
-                            <span className="font-medium">{lesson.exercise.replace("Exercice : ", "").replace("Exercice :", "")}</span>
+                    {lesson.content && (
+                      <div
+                        className={`grid transition-[grid-template-rows] duration-300 ease-in-out ${isActive ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}
+                      >
+                        <div className="overflow-hidden">
+                          <div className="px-5 pb-6 pl-[4.5rem]">
+                            <ul className="space-y-2 mb-6">
+                              {lesson.content.map((item, index) => (
+                                <li key={index} className="flex items-start gap-3">
+                                  <span className="text-gray-400 text-xs mt-1.5 font-bold">•</span>
+                                  <span className="text-gray-600 font-medium text-sm leading-relaxed">{item}</span>
+                                </li>
+                              ))}
+                            </ul>
+
+                            {lesson.exercise && (
+                              <div className="bg-[#f0f4fa] border border-blue-100 text-blue-800 text-sm p-4 rounded-lg flex items-start gap-2">
+                                <span className="font-bold text-blue-600">Exercice :</span>
+                                <span className="font-medium">{lesson.exercise.replace("Exercice : ", "").replace("Exercice :", "")}</span>
+                              </div>
+                            )}
                           </div>
-                        )}
+                        </div>
                       </div>
                     )}
                   </div>

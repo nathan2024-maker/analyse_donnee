@@ -26,9 +26,12 @@ export function Header() {
       </div>
       
       {/* CTA Button */}
-      <button className="bg-bafe-yellow text-bafe-blue font-bold px-8 py-3 rounded-full hover:bg-yellow-500 transition-colors shadow-lg">
+      <a
+        href="#inscription"
+        className="bg-bafe-yellow text-bafe-blue font-bold px-8 py-3 rounded-full hover:bg-yellow-500 transition-colors shadow-lg"
+      >
         S'inscrire
-      </button>
+      </a>
     </header>
   );
 }
