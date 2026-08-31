@@ -3,7 +3,7 @@ import React from "react";
 export function Header() {
   return (
     <header className="w-full py-4 px-6 md:px-12 bg-bafe-blue flex items-center justify-between sticky top-0 z-50">
-      <div className="flex items-center gap-6">
+      <div className="flex flex-col items-start gap-2">
         {/* Logo Container (White pill) */}
         <div className="bg-white rounded-2xl px-6 py-2 flex items-center justify-center shadow-sm">
           {/* Textual representation of the logo since we don't have the file in public/ yet */}
@@ -18,9 +18,9 @@ export function Header() {
             </div>
           </div>
         </div>
-        
+
         {/* Formation Title */}
-        <div className="text-bafe-yellow font-bold tracking-[0.2em] text-sm hidden sm:block uppercase">
+        <div className="text-bafe-yellow font-bold tracking-[0.2em] text-xs uppercase pl-1">
           Formation Excel <span className="mx-2">•</span> Lomé
         </div>
       </div>
