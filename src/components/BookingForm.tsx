@@ -70,7 +70,6 @@ export function BookingForm() {
 
             <div className="bg-yellow-50/50 border border-yellow-200/50 rounded-xl p-6 my-8">
               <p className="text-sm font-medium text-bafe-blue mb-4">
-                <span className="text-yellow-600 mr-2">ℹ️</span>
                 Paiement requis pour valider l'inscription. Choisissez votre mode de paiement.
               </p>
 

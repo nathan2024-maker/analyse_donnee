@@ -16,8 +16,8 @@ export function Footer() {
 
           {/* Contact Info */}
           <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 inline-block">
-            <h4 className="font-bold text-bafe-blue mb-4 flex items-center gap-2 text-sm">
-              <span className="text-blue-500">🏢</span> Bureaux et Contacts au Togo
+            <h4 className="font-bold text-bafe-blue mb-4 text-sm">
+              Bureaux et Contacts au Togo
             </h4>
             <div className="space-y-4 text-sm text-bafe-blue/80">
               <div className="flex items-start gap-3">
@@ -26,7 +26,7 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-blue-500 flex-shrink-0" />
-                <span>+228 90 00 00 00 / 99 00 00 00</span>
+                <span>+228 90 15 31 70</span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-blue-500 flex-shrink-0" />

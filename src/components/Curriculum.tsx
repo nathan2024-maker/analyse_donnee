@@ -140,8 +140,8 @@ export function Curriculum() {
   return (
     <section id="programme" className="py-20 px-6 md:px-12 max-w-5xl mx-auto scroll-mt-24">
       <div className="text-center mb-12">
-        <h2 className="text-2xl font-bold text-bafe-blue flex items-center justify-center gap-2">
-          <span className="text-2xl">📖</span> Programme détaillé
+        <h2 className="text-2xl font-bold text-bafe-blue text-center">
+          Programme détaillé
         </h2>
       </div>
 

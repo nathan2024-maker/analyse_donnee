@@ -1,8 +1,8 @@
 import React from "react";
-import { 
-  Target, Settings, LayoutGrid, FileText, LineChart, 
-  TableProperties, Search, Lightbulb, Filter, Database, 
-  Calculator, BarChart2 
+import {
+  Target, LayoutGrid, FileText, LineChart,
+  TableProperties, Search, Lightbulb, Filter, Database,
+  Calculator, BarChart2
 } from "lucide-react";
 
 export function LearningObjectives() {
@@ -94,13 +94,13 @@ export function LearningObjectives() {
   ];
 
   return (
-    <section className="py-20 px-6 md:px-12 bg-[#f4f7fb] flex justify-center">
+    <section className="pt-10 pb-20 px-6 md:px-12 bg-[#f4f7fb] flex justify-center">
       <div className="w-full max-w-6xl">
-        
+
         {/* Top Part */}
         <div className="mb-20">
-          <h2 className="text-2xl font-bold text-bafe-blue mb-10 flex items-center justify-center gap-2">
-            <span className="text-2xl">🎯</span> Ce que vous allez apprendre
+          <h2 className="text-2xl font-bold text-bafe-blue mb-10 text-center">
+            Ce que vous allez apprendre
           </h2>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
@@ -122,8 +122,8 @@ export function LearningObjectives() {
 
         {/* Bottom Part */}
         <div>
-          <h2 className="text-2xl font-bold text-bafe-blue mb-16 flex items-center justify-center gap-2">
-            <Settings className="w-6 h-6 text-gray-700" /> Comment se déroule chaque leçon
+          <h2 className="text-2xl font-bold text-bafe-blue mb-16 text-center">
+            Comment se déroule chaque leçon
           </h2>
           
           <div className="relative flex flex-col md:flex-row justify-between items-center gap-8 md:gap-4 max-w-5xl mx-auto">
