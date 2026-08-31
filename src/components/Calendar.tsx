@@ -20,7 +20,7 @@ export function Calendar() {
   ];
 
   return (
-    <section className="py-20 px-6 md:px-12 bg-white flex justify-center">
+    <section className="py-12 md:py-20 px-6 md:px-12 bg-white flex justify-center">
       <div className="w-full max-w-5xl">
         <div className="text-center mb-12">
           <h3 className="text-blue-500 font-bold text-xs tracking-[0.2em] uppercase mb-4">CALENDRIER</h3>

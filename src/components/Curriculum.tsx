@@ -138,7 +138,7 @@ export function Curriculum() {
   };
 
   return (
-    <section id="programme" className="py-20 px-6 md:px-12 max-w-5xl mx-auto scroll-mt-24">
+    <section id="programme" className="py-12 md:py-20 px-6 md:px-12 max-w-5xl mx-auto scroll-mt-24">
       <div className="text-center mb-12">
         <h2 className="text-2xl font-bold text-bafe-blue text-center">
           Programme détaillé

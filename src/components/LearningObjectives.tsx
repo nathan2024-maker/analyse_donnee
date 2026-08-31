@@ -94,7 +94,7 @@ export function LearningObjectives() {
   ];
 
   return (
-    <section className="pt-10 pb-20 px-6 md:px-12 bg-[#f4f7fb] flex justify-center">
+    <section className="pt-10 pb-12 md:pb-20 px-6 md:px-12 bg-[#f4f7fb] flex justify-center">
       <div className="w-full max-w-6xl">
 
         {/* Top Part */}
