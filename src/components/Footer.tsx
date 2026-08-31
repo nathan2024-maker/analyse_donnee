@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { Mail, MapPin, Phone } from "lucide-react";
 
 export function Footer() {
@@ -8,7 +9,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
           {/* Logo and About */}
           <div>
-            <h3 className="text-xl font-black text-bafe-blue mb-4">BAFE & Associés</h3>
+            <Image src="/logo.jpg" alt="BAFE & Associés" width={1004} height={650} className="h-10 w-auto mb-4" />
             <p className="text-bafe-blue/70 text-sm leading-relaxed max-w-sm">
               Cabinet d'expertise comptable, de conseil et d'ingénierie de la formation. BAFE & Associés accompagne les entreprises dans leur structuration financière et la montée en compétences de leurs équipes.
             </p>
