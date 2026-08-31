@@ -35,7 +35,6 @@ export function Hero() {
         <div className="flex flex-col items-start gap-6">
           {/* Top Pill */}
           <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 text-sm">
-            <span className="text-lg">📊</span>
             <span className="text-bafe-yellow font-medium">Module 1 - Excel pour l'analyse de données</span>
           </div>
           
