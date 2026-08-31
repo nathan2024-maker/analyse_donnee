@@ -82,17 +82,6 @@ export function BookingForm() {
               <p className="text-xs text-gray-500 mb-4 bg-white p-3 rounded border border-gray-100">
                 Envoyez le montant au : <strong>+228 90 15 31 70</strong> (Nom: BAFE Associes). Renseignez ensuite vos informations ci-dessous.
               </p>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="space-y-1">
-                  <label className="text-sm font-semibold text-gray-700">Numéro de transfert</label>
-                  <input type="text" className="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500/50" />
-                </div>
-                <div className="space-y-1">
-                  <label className="text-sm font-semibold text-gray-700">Nom sur le compte d'envoi</label>
-                  <input type="text" className="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500/50" />
-                </div>
-              </div>
             </div>
 
             <button type="submit" className="w-full bg-bafe-blue text-white font-bold text-lg py-4 rounded-xl hover:bg-[#060c1d] transition-colors shadow-lg">
